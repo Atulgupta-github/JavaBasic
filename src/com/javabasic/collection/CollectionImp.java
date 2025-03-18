@@ -21,7 +21,9 @@ public class CollectionImp {
 	public static void main(String [] args) {
 		List<Integer> list = Arrays.asList(2,32,43,43,54,6);
 		
+		//iteratorImp(list);
 		
+		//collectionImp();
 		
 		List();
 		
