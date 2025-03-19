@@ -13,12 +13,7 @@ public class StackImplementation {
 		s.pop();
 		System.out.println(s.pop());
 		System.out.println(s.size());
-		
-		
-		
-		
-		
-		
+
 	}
 }
 
