@@ -23,6 +23,7 @@ public class CollectionImp {
 		
 		//iteratorImp(list);
 		
+		//collectionImp();
 		
 		List();
 		
