@@ -23,14 +23,21 @@ public class problemSolving {
 	
 	public static Map<Integer,Integer> getFrequency(List<Integer> list){
 		Map<Integer,Integer> freq= new HashMap<Integer, Integer>();
-		
-		
+		String str= "gsfdjhgkfgdh3jsfdfds";
+		Map<Character , Integer> Map= new HashMap<>();
 		for(int i : list) {
 			freq.put(i, freq.getOrDefault(i, 0)+1);
 		}
+		for(char ch : str.toCharArray()) {
+			Map.put(ch, Map.getOrDefault(ch, 0)+1);
+		}
+		String s = str.chars().distinct().mapToObj(e-> String.valueOf(e)).collect(Collectors.joining());
 		
 		int a[] = new int[5];
 		return freq;
+		
+		
+		
 		
 		
 //		for(Map.Entry<Integer,Integer> entry : freq.entrySet()) {

@@ -1,4 +1,4 @@
-package com.javabasic.Java8Features;
+package com.javabasic.Java8Features.LambdaExpression;
 
 public class LambdaExpImp {
 
