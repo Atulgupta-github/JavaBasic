@@ -17,6 +17,11 @@ public class problemSolving {
 		 Map<Integer,Integer> d=list.stream().collect(Collectors.groupingBy(i->i, Collectors.summingInt(i->1)));
 		 System.out.println(d);
 		 
+		 String sh ="adsdsdsffsdfsfsgg";
+		 
+		char[] crr = sh.toCharArray();
+		
+		 
 		 System.out.println(getFrequency(list));
 
 	}
