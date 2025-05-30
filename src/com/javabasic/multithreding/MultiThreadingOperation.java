@@ -1,8 +1,12 @@
 package com.javabasic.multithreding;
 
+
+
 public class MultiThreadingOperation {
 
 	public static void main(String[] args) {
+		
+	//	switchcaseimp();
 		Thread1 th1 = new Thread1();
 		Thread2 th2= new Thread2();
 		
@@ -16,6 +20,21 @@ public class MultiThreadingOperation {
 		//t1.setDaemon(true);
 		//System.out.println(t1.isDaemon());
 
+	}
+	public static void switchcaseimp() {
+		String st ="atul";
+		
+		switch(st) {
+		case "nitin":{
+			System.out.println("nitin");
+		}
+		case "atul":{
+			System.out.println("atil");
+		}
+		default:{
+			System.out.println("hello");
+		}
+		}
 	}
 
 }

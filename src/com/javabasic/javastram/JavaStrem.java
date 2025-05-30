@@ -119,6 +119,8 @@ public class JavaStrem {
 		int max1 = newList.stream().mapToInt(e->e).max().getAsInt();
 		int ndMax = newList.stream().filter(e->e<max1).mapToInt(e->e).max().getAsInt();
 		
+		Map<Integer,Integer> fmap = list.stream().collect(Collectors.groupingBy(e->e,Collectors.summingInt(e->1)));														
+		
 		
 		System.out.println(list);
 		System.out.println(max);

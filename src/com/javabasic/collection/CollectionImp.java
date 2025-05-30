@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
@@ -32,9 +33,14 @@ public class CollectionImp {
 	
 	public static void iteratorImp(List<Integer> list) {
 		Iterator<Integer> it = list.iterator();
+		ListIterator<Integer> lit = list.listIterator();
+		while(lit.hasNext()) {
+			lit.add(23);
+		}
 		
 		while(it.hasNext()) {
 			int element =it.next();
+			
 			if(element>34) {
 				
 				System.out.println(element);
@@ -149,8 +155,10 @@ public class CollectionImp {
 		map.put(1, "sku");
 		map.put(2, "bin");
 		
-		
-		
+		List<Integer> list = Arrays.asList(32,32,3,4,42,45,47,3);
+		Map<Integer,Integer> m = list.stream().filter(e->e>44).collect(Collectors.toMap(Integer :: valueOf, Integer :: valueOf));
+		int maxx = list.stream().mapToInt(e->e).max().getAsInt();
+		int ndMx = list.stream().filter(e->e<maxx).mapToInt(e->e).max().getAsInt();
 		for(Map.Entry<Integer, String> entry :map.entrySet()) {
 			System.out.println(entry.getKey()+ " "+ entry.getValue());
 		}

@@ -1,11 +1,13 @@
-public final class Car {
-	final String name;
+public class Car {
+	 String name;
+	 int model;
 	
-	public Car(String cname) {
+	
+	
+	public Car(String cname,int mode) {
 		this.name=cname;
+		this.model=mode;
 	}
 	
-	public String getName() {
-		return this.name;
-	}
+
 }
